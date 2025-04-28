@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e37f090-e341-41e1-ac28-eca9f19c92fc" name="Changes" comment="up code">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="3e37f090-e341-41e1-ac28-eca9f19c92fc" name="Changes" comment="=)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +41,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\New folder\nhandienbienbao" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="nhandienbienbao" />
@@ -113,7 +115,31 @@
       <option name="project" value="LOCAL" />
       <updated>1745810177844</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="đổi lại vì sợ bị dỗi, mn thongcam">
+      <option name="closed" value="true" />
+      <created>1745810977035</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745810977035</updated>
+    </task>
+    <task id="LOCAL-00005" summary="=)">
+      <option name="closed" value="true" />
+      <created>1745811143268</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745811143268</updated>
+    </task>
+    <task id="LOCAL-00006" summary="=)">
+      <option name="closed" value="true" />
+      <created>1745811186421</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1745811186421</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,6 +155,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="up code" />
-    <option name="LAST_COMMIT_MESSAGE" value="up code" />
+    <MESSAGE value="đổi lại vì sợ bị dỗi, mn thongcam" />
+    <MESSAGE value="=)" />
+    <option name="LAST_COMMIT_MESSAGE" value="=)" />
   </component>
 </project>

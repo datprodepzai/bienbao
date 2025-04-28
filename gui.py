@@ -25,7 +25,7 @@ top.geometry('900x650')
 top.title('🚦 Nhận dạng biển báo giao thông 🚦')
 
 # Add background image
-background_img = Image.open("background.jpg")  # <-- bạn cần có 1 file background.jpg đẹp
+background_img = Image.open("Background.jpg")  # <-- bạn cần có 1 file background.jpg đẹp
 background_img = background_img.resize((900, 650))
 bg_img = ImageTk.PhotoImage(background_img)
 

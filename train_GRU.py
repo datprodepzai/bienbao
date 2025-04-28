@@ -76,24 +76,28 @@ history = model.fit(X_train, y_train, batch_size=32, epochs=epochs, validation_d
 # --- Lưu mô hình ---
 model.save("my_model_GRU.h5")
 
-# --- Vẽ đồ thị Accuracy ---
-plt.figure(0)
-plt.plot(history.history['accuracy'], label='training accuracy')
-plt.plot(history.history['val_accuracy'], label='val accuracy')
-plt.title('Accuracy')
-plt.xlabel('Epochs')
-plt.ylabel('Accuracy')
-plt.legend()
-plt.show()
+# --- Gộp đồ thị Accuracy và Loss ---
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))   # 1 dòng 2 cột
 
-# --- Vẽ đồ thị Loss ---
-plt.figure(1)
-plt.plot(history.history['loss'], label='training loss')
-plt.plot(history.history['val_loss'], label='val loss')
-plt.title('Loss')
-plt.xlabel('Epochs')
-plt.ylabel('Loss')
-plt.legend()
+# Đồ thị Accuracy
+ax1.plot(history.history['accuracy'], label='training accuracy')
+ax1.plot(history.history['val_accuracy'], label='validation accuracy')
+ax1.set_title('Accuracy')
+ax1.set_xlabel('Epochs')
+ax1.set_ylabel('Accuracy')
+ax1.set_ylim([0, 1])    # <--- Cố định trục Oy từ 0 đến 1
+ax1.legend()
+
+# Đồ thị Loss
+ax2.plot(history.history['loss'], label='training loss')
+ax2.plot(history.history['val_loss'], label='validation loss')
+ax2.set_title('Loss')
+ax2.set_xlabel('Epochs')
+ax2.set_ylabel('Loss')
+ax2.set_ylim([0, 1])    # <--- Cố định trục Oy từ 0 đến 1
+ax2.legend()
+
+plt.tight_layout()
 plt.show()
 
 # --- Đọc file Test.csv để kiểm tra mô hình ---

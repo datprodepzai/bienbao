@@ -44,9 +44,8 @@ Dự án này là kết quả của sự sáng tạo và công sức của cộn
 🌼 Liên Hệ
 Nếu bạn có bất kỳ câu hỏi nào, đừng ngần ngại liên hệ với chúng tôi qua:
 
-Email: datprodepzai@gmail.com
+Email: phamdatha@gmail.com
 
-Twitter: @datprodepzai
 
 Hãy cùng nhau biến mỗi chuyến đi trên con đường giao thông trở nên an toàn và đầy màu sắc hơn!
 

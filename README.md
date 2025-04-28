@@ -23,16 +23,6 @@ Chúng tôi tin rằng mỗi biển báo, dù là "Cấm đỗ xe", "Giới hạ
    git clone https://github.com/datprodepzai/bienbao.git
 Cài Đặt Các Thư Viện Cần Thiết Cài đặt các thư viện yêu cầu bằng pip:
 
-bash
-Sao chép
-Chỉnh sửa
-pip install -r requirements.txt
-Chạy Ứng Dụng Sau khi cài đặt xong, bạn có thể chạy ứng dụng để bắt đầu khám phá:
-
-bash
-Sao chép
-Chỉnh sửa
-python app.py
 💡 Chức Năng Chính
 Nhận diện biển báo giao thông từ ảnh hoặc video.
 
@@ -49,9 +39,7 @@ Dự án này là kết quả của sự sáng tạo và công sức của cộn
 🌼 Liên Hệ
 Nếu bạn có bất kỳ câu hỏi nào, đừng ngần ngại liên hệ với chúng tôi qua:
 
-Email: datprodepzai@gmail.com
-
-Twitter: @datprodepzai
+Email: phamdatha@gmail.com
 
 Hãy cùng nhau biến mỗi chuyến đi trên con đường giao thông trở nên an toàn và đầy màu sắc hơn!
 

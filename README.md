@@ -6,42 +6,104 @@
 <img src="Background.jpg" alt="Ảnh cô ấy" style="border: 5px solid #FF6347; border-radius: 10px; width: 500px; height: auto;">
 
 
-# 🌟 **Dự án Biển Báo - Biến Mỗi Biển Báo Thành Một Tác Phẩm Nghệ Thuật** 🌟
+BienBao: Traffic Sign Recognition Using Deep Learning
+Overview
+BienBao is a machine learning project aimed at the automatic recognition and classification of traffic signs. By leveraging deep learning models, the project seeks to enhance the accuracy and efficiency of traffic sign detection, which is crucial for applications such as autonomous driving and advanced driver-assistance systems (ADAS).
 
-Chào mừng bạn đến với **Dự án Biển Báo** - một nơi mà sự sáng tạo gặp gỡ thực tế, nơi những biển báo không chỉ là thông điệp mà còn là những hình ảnh đầy màu sắc, mang trong mình câu chuyện riêng biệt. Dự án này được tạo ra nhằm giúp việc nhận diện và phân loại biển báo trở nên dễ dàng và thú vị hơn bao giờ hết.
+Features
+Deep Learning Models: Utilizes convolutional neural networks (CNNs) and gated recurrent units (GRUs) for image classification tasks.
 
-### ✨ **Giới Thiệu**
-Dự án này giúp bạn nhận diện biển báo giao thông thông qua các mô hình học máy, và hiển thị kết quả với một giao diện đẹp mắt và dễ sử dụng. Được xây dựng từ những kỹ thuật mới nhất, **Dự án Biển Báo** sẽ giúp bạn khám phá thế giới giao thông với một góc nhìn hoàn toàn mới.
+Graphical User Interface (GUI): Provides an intuitive interface for users to interact with the model and visualize predictions.
 
-### 🌺 **Cảm Hứng**
-Chúng tôi tin rằng mỗi biển báo, dù là "Cấm đỗ xe", "Giới hạn tốc độ" hay "Chạy chậm", đều mang trong mình một câu chuyện và một lý do để tồn tại. **Dự án Biển Báo** không chỉ là một công cụ mà còn là một cách để chúng ta hiểu sâu hơn về giao thông và môi trường xung quanh.
+Comprehensive Dataset: Includes a diverse set of traffic sign images for training and testing purposes.
 
-### 🚀 **Cách Cài Đặt**
-Để cài đặt và sử dụng dự án này, hãy làm theo các bước dưới đây:
+Project Structure
+The repository comprises the following key components:
 
-1. **Clone Dự Án**
-   ```bash
-   git clone https://github.com/datprodepzai/bienbao.git
-Cài Đặt Các Thư Viện Cần Thiết Cài đặt các thư viện yêu cầu bằng pip:
+train.py: Script for training the CNN model on the traffic sign dataset.
 
-💡 Chức Năng Chính
-Nhận diện biển báo giao thông từ ảnh hoặc video.
+train_GRU.py: Script for training the GRU-based model.
 
-Hiển thị kết quả phân loại dưới dạng rõ ràng và dễ hiểu.
+gui.py: Implements the GUI for model interaction and visualization.
 
-Giao diện thân thiện và dễ sử dụng, phù hợp cho mọi đối tượng người dùng.
+my_model.h5 and traffic_classifier.h5: Pre-trained model weights for CNN and GRU models, respectively.
 
-🌈 Kết Nối và Cộng Tác
-Chúng tôi luôn chào đón những đóng góp từ cộng đồng. Hãy mở một pull request hoặc issue nếu bạn muốn tham gia hoặc có ý tưởng cải thiện dự án.
+train/ and test/: Directories containing training and testing images.
 
-🌹 Mọi Đóng Góp Đều Quý Giá
-Dự án này là kết quả của sự sáng tạo và công sức của cộng đồng. Mỗi đóng góp, dù nhỏ hay lớn, đều góp phần làm cho dự án ngày càng hoàn thiện và tốt đẹp hơn.
+Train.csv and Test.csv: CSV files detailing the metadata for training and testing datasets.
 
-🌼 Liên Hệ
-Nếu bạn có bất kỳ câu hỏi nào, đừng ngần ngại liên hệ với chúng tôi qua:
+Meta.csv: Contains additional metadata information for the dataset.
 
-Email: phamdatha@gmail.com
+Installation
+Clone the Repository:
 
-Hãy cùng nhau biến mỗi chuyến đi trên con đường giao thông trở nên an toàn và đầy màu sắc hơn!
+bash
+Sao chép
+Chỉnh sửa
+git clone https://github.com/datprodepzai/bienbao.git
+cd bienbao
+Install Dependencies:
 
-Chúc bạn luôn an toàn và hạnh phúc trên mọi con đường! 🚗💨
+Ensure you have Python 3.x installed. Install the required packages using pip:
+
+bash
+Sao chép
+Chỉnh sửa
+pip install -r requirements.txt
+Usage
+Training the Model:
+
+To train the CNN model:
+
+bash
+Sao chép
+Chỉnh sửa
+python train.py
+To train the GRU model:
+
+bash
+Sao chép
+Chỉnh sửa
+python train_GRU.py
+Launching the GUI:
+
+After training, launch the GUI to interact with the model:
+
+bash
+Sao chép
+Chỉnh sửa
+python gui.py
+The GUI allows users to input traffic sign images and view the model's predictions in real-time.
+
+Dataset
+The dataset comprises various traffic sign images categorized into different classes. Each image is labeled and stored in the train/ and test/ directories. The accompanying CSV files (Train.csv, Test.csv, and Meta.csv) provide metadata, including image paths and corresponding labels.
+
+Model Architecture
+CNN Model: Designed to capture spatial hierarchies in images, making it suitable for recognizing traffic sign patterns.
+
+GRU Model: Incorporates temporal dependencies, which can be beneficial if the dataset includes sequential data or video frames.
+
+Both models are trained using supervised learning techniques and optimized using appropriate loss functions and optimizers to achieve high classification accuracy.
+
+Results
+The trained models demonstrate promising accuracy in classifying various traffic signs. The GUI facilitates easy testing and validation of the models on new images, providing immediate visual feedback on predictions.
+
+Future Work
+Dataset Expansion: Incorporate more diverse and extensive traffic sign images to improve model generalization.
+
+Model Optimization: Experiment with different architectures and hyperparameters to enhance performance.
+
+Real-time Deployment: Integrate the model into real-time systems for on-the-fly traffic sign recognition.
+
+Contributing
+Contributions are welcome! Please fork the repository and submit a pull request with your enhancements. For major changes, kindly open an issue first to discuss the proposed modifications.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+Acknowledgments
+We extend our gratitude to the open-source community and contributors who have provided valuable resources and inspiration for this project.
+
+For more details and to access the project, visit the GitHub repository.
+
+

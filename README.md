@@ -102,6 +102,13 @@ The models demonstrate high accuracy in recognizing traffic signs across multipl
 
 Contributions are welcome. Please fork the repository and submit a pull request. For substantial changes, open an issue to discuss the proposed updates beforehand.
 
+## Student Info
+Group ID: 7 
+Phạm Ngọc Phương Anh (22BI13037)
+Hoàng Quỳnh Anh (22BI13015)
+Phạm Chí Bách (22BI13055)
+Nguyễn Đức Dũng (22BI13106)
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

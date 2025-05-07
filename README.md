@@ -1,28 +1,117 @@
 <br>
  
  <img src="Background.jpg" alt="Ảnh cô ấy" style="border: 5px solid #FF6347; border-radius: 10px; width: 300px; height: auto;">
- <img src="Background.jpg" alt="Ảnh cô ấy" style="border: 5px solid #FF6347; border-radius: 10px; width: 500px; height: auto;">
- 
- 
- # 🌟 **Dự án Biển Báo - Biến Mỗi Biển Báo Thành Một Tác Phẩm Nghệ Thuật** 🌟
- 
- Chào mừng bạn đến với **Dự án Biển Báo** - một nơi mà sự sáng tạo gặp gỡ thực tế, nơi những biển báo không chỉ là thông điệp mà còn là những hình ảnh đầy màu sắc, mang trong mình câu chuyện riêng biệt. Dự án này được tạo ra nhằm giúp việc nhận diện và phân loại biển báo trở nên dễ dàng và thú vị hơn bao giờ hết.
- 
- ### ✨ **Giới Thiệu**
- Dự án này giúp bạn nhận diện biển báo giao thông thông qua các mô hình học máy, và hiển thị kết quả với một giao diện đẹp mắt và dễ sử dụng. Được xây dựng từ những kỹ thuật mới nhất, **Dự án Biển Báo** sẽ giúp bạn khám phá thế giới giao thông với một góc nhìn hoàn toàn mới.
- 
- ### 🌺 **Cảm Hứng**
- Chúng tôi tin rằng mỗi biển báo, dù là "Cấm đỗ xe", "Giới hạn tốc độ" hay "Chạy chậm", đều mang trong mình một câu chuyện và một lý do để tồn tại. **Dự án Biển Báo** không chỉ là một công cụ mà còn là một cách để chúng ta hiểu sâu hơn về giao thông và môi trường xung quanh.
- 
- ### 🚀 **Cách Cài Đặt**
- Để cài đặt và sử dụng dự án này, hãy làm theo các bước dưới đây:
- 
- 1. **Clone Dự Án**
-    ```bash
-    git clone https://github.com/datprodepzai/bienbao.git
- Cài Đặt Các Thư Viện Cần Thiết Cài đặt các thư viện yêu cầu bằng pip:
- 
- 💡 Chức Năng Chính
- Nhận diện biển báo giao thông từ ảnh hoặc video.
- 
- Hiển thị kết quả phân loại dưới dạng rõ ràng và dễ hiểu.
+
+# BienBao: Traffic Sign Recognition Using Deep Learning
+
+## Overview
+
+**BienBao** is a deep learning project focused on the automated recognition and classification of traffic signs. The project is developed as part of an academic exploration into computer vision and machine learning applications in intelligent transportation systems. Its potential usage spans across autonomous vehicles, traffic monitoring systems, and driver-assistance applications.
+
+## Features
+
+- Convolutional Neural Network (CNN) model for image-based classification.
+- GRU (Gated Recurrent Unit) architecture for sequence-based learning.
+- Real-time Graphical User Interface (GUI) for traffic sign prediction.
+- Dataset of categorized traffic sign images with metadata.
+- Support for training and testing on custom datasets.
+
+## Project Structure
+
+```
+bienbao/
+├── gui.py                      # GUI interface for testing traffic sign recognition
+├── train.py                   # Training script for CNN model
+├── train_GRU.py               # Training script for GRU-based model
+├── my_model.h5                # Saved CNN model weights
+├── traffic_classifier.h5      # Saved GRU model weights
+├── Train.csv                  # Metadata for training dataset
+├── Test.csv                   # Metadata for testing dataset
+├── Meta.csv                   # Additional dataset metadata
+├── train/                     # Training images
+├── test/                      # Testing images
+└── requirements.txt           # List of Python dependencies
+```
+
+## Installation
+
+1. **Clone the repository**:
+
+```bash
+git clone https://github.com/datprodepzai/bienbao.git
+cd bienbao
+```
+
+2. **Install dependencies**:
+
+Make sure you have Python 3.x installed, then install the required libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+### 1. Training the CNN Model
+
+```bash
+python train.py
+```
+
+### 2. Training the GRU Model
+
+```bash
+python train_GRU.py
+```
+
+### 3. Running the GUI
+
+```bash
+python gui.py
+```
+
+Use the GUI to load an image of a traffic sign and see the model’s prediction in real time.
+
+## Dataset Description
+
+The dataset consists of images of traffic signs categorized into classes. Each image is labeled and stored in structured folders (`train/` and `test/`). Metadata is provided in the form of CSV files:
+
+- `Train.csv`: includes file paths and labels for training images.
+- `Test.csv`: includes file paths and labels for test images.
+- `Meta.csv`: includes class descriptions and additional annotations.
+
+## Model Architectures
+
+- **CNN (Convolutional Neural Network)**: Extracts spatial features from static images.
+- **GRU (Gated Recurrent Unit)**: Captures temporal dynamics, particularly useful for sequential image inputs.
+
+Both models are trained using supervised learning with cross-entropy loss and optimized using adaptive optimizers like Adam.
+
+## Results
+
+The models demonstrate high accuracy in recognizing traffic signs across multiple classes. GUI interaction offers instant feedback on predictions, allowing practical evaluation of the trained models.
+
+## Future Work
+
+- Integrate real-time webcam-based recognition.
+- Augment dataset with diverse traffic sign images from different countries.
+- Deploy the model in mobile or embedded systems.
+- Enhance performance using ensemble learning or attention mechanisms.
+
+## Contributing
+
+Contributions are welcome. Please fork the repository and submit a pull request. For substantial changes, open an issue to discuss the proposed updates beforehand.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- TensorFlow and Keras open-source communities.
+- Researchers and datasets that made this work possible.
+- All contributors to the field of intelligent transportation systems.
+
+---
+
+Developed for academic and research purposes.
